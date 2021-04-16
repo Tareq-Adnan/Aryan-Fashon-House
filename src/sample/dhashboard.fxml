@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="978.0" stylesheets="@../Style/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.dhashboard">
+   <children>
+      <HBox alignment="CENTER" layoutX="38.0" layoutY="84.0" prefHeight="122.0" prefWidth="214.0" styleClass="shape" stylesheets="@../Style/style.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="22.19" radius="10.8925" width="23.38">
+               <color>
+                  <Color red="0.6026315689086914" green="0.6026315689086914" blue="0.6026315689086914" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label alignment="CENTER" stylesheets="@../Style/style.css" text="420" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="267.0" layoutY="84.0" prefHeight="122.0" prefWidth="214.0" styleClass="shape1" stylesheets="@../Style/style.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="22.19" radius="10.8925" width="23.38">
+               <color>
+                  <Color red="0.6026315689086914" green="0.6026315689086914" blue="0.6026315689086914" />
+               </color>
+            </DropShadow>
+         </effect>
+      </HBox>
+      <HBox layoutX="495.0" layoutY="84.0" prefHeight="122.0" prefWidth="214.0" styleClass="shape2" stylesheets="@../Style/style.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="22.19" radius="10.8925" width="23.38">
+               <color>
+                  <Color red="0.6026315689086914" green="0.6026315689086914" blue="0.6026315689086914" />
+               </color>
+            </DropShadow>
+         </effect>
+      </HBox>
+      <HBox layoutX="722.0" layoutY="84.0" prefHeight="122.0" prefWidth="214.0" styleClass="shape3" stylesheets="@../Style/style.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="22.19" radius="10.8925" width="23.38">
+               <color>
+                  <Color red="0.6026315689086914" green="0.6026315689086914" blue="0.6026315689086914" />
+               </color>
+            </DropShadow>
+         </effect>
+      </HBox>
+      <TableView layoutX="9.0" layoutY="285.0" prefHeight="366.0" prefWidth="954.0" stylesheets="@../Style/style.css">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="27.55" radius="15.21" width="35.29">
+               <color>
+                  <Color red="0.8447368144989014" green="0.8447368144989014" blue="0.8447368144989014" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TableView>
+      <HBox alignment="CENTER_LEFT" layoutX="8.0" prefHeight="62.0" prefWidth="954.0" style="-fx-background-color: white;">
+         <children>
+            <Text fill="#2de3f8" strokeType="OUTSIDE" strokeWidth="0.0" text="STATUS" wrappingWidth="214.95623779296875">
+               <font>
+                  <Font name="Tahoma Bold" size="32.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="16.23" offsetY="3.0" radius="4.6375" width="4.32">
+                     <color>
+                        <Color red="0.5394737124443054" green="0.5394737124443054" blue="0.5394737124443054" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="37.68" radius="8.92" width="0.0">
+               <color>
+                  <Color red="0.4973684251308441" green="0.4973684251308441" blue="0.4973684251308441" />
+               </color>
+            </DropShadow>
+         </effect>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="8.0" layoutY="223.0" prefHeight="62.0" prefWidth="954.0" style="-fx-background-color: white;">
+         <children>
+            <Text fill="#2de3f8" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMERS" wrappingWidth="214.95623779296875">
+               <font>
+                  <Font name="Tahoma Bold" size="32.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="16.23" offsetY="3.0" radius="4.6375" width="4.32">
+                     <color>
+                        <Color red="0.5394737124443054" green="0.5394737124443054" blue="0.5394737124443054" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="37.68" radius="8.92" width="0.0">
+               <color>
+                  <Color red="0.4973684251308441" green="0.4973684251308441" blue="0.4973684251308441" />
+               </color>
+            </DropShadow>
+         </effect>
+      </HBox>
+   </children>
+</AnchorPane>

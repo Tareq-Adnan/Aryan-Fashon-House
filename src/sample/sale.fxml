@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="978.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SaleController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="40.0" prefHeight="79.0" prefWidth="1009.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" prefHeight="62.0" prefWidth="351.0" text="Sale Products" textFill="#2ec0f0">
+               <font>
+                  <Font name="Segoe UI Bold" size="49.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="0.0" offsetY="3.0" radius="2.3675" width="11.47">
+                     <color>
+                        <Color red="0.6973684430122375" green="0.6960769891738892" blue="0.6960769891738892" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="36.94" offsetY="4.0" radius="12.309999999999999" width="14.3">
+               <color>
+                  <Color red="0.7921052575111389" green="0.7921052575111389" blue="0.7921052575111389" />
+               </color>
+            </DropShadow>
+         </effect>
+      </HBox>
+      <VBox layoutX="39.0" layoutY="92.0" prefHeight="609.0" prefWidth="970.0" style="-fx-background-color: white;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="43.0" prefWidth="970.0" style="-fx-background-color: white;" styleClass="status-bar" stylesheets="@../Style/style.css">
+               <effect>
+                  <DropShadow height="24.92" offsetY="4.0" radius="5.73" width="0.0">
+                     <color>
+                        <Color red="0.550000011920929" green="0.550000011920929" blue="0.550000011920929" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="163.0" styleClass="font" text="Customer Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="163.0" styleClass="font" text="Serial No">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="163.0" styleClass="font" text="Date">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="163.0" styleClass="font" text="Amount">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="163.0" styleClass="font" text="Quantity">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="163.0" styleClass="font" text="Total">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField alignment="CENTER" prefHeight="39.0" prefWidth="202.0" promptText="Name Here" styleClass="text" stylesheets="@../Style/style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" prefHeight="39.0" prefWidth="153.0" promptText="Serial No" styleClass="text" stylesheets="@../Style/style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="160.0" styleClass="text" stylesheets="@../Style/style.css" text="Label">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField alignment="CENTER" prefHeight="39.0" prefWidth="180.0" promptText="Amount" styleClass="text" stylesheets="@../Style/style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" prefHeight="39.0" prefWidth="173.0" promptText="Quantity" styleClass="text" stylesheets="@../Style/style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="185.0" styleClass="text" stylesheets="@../Style/style.css" text="0.00">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="43.0" prefWidth="970.0" style="-fx-background-color: white; -fx-border-color: green;" styleClass="status-bar" stylesheets="@../Style/style.css">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="34.83" offsetY="4.0" radius="8.2075" width="0.0">
+                     <color>
+                        <Color red="0.550000011920929" green="0.550000011920929" blue="0.550000011920929" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="324.0" styleClass="font" text="Paid">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="339.0" styleClass="font" text="Due">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="305.0" styleClass="font" text="Return">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField alignment="CENTER" prefHeight="39.0" prefWidth="331.0" promptText="Enter Amount Here" style="-fx-border-color: green;" styleClass="text" stylesheets="@../Style/style.css">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="363.0" style="-fx-border-color: green;" styleClass="text" stylesheets="@../Style/style.css" text="0.00">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="310.0" style="-fx-border-color: green;" styleClass="text" stylesheets="@../Style/style.css" text="0.00">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="970.0" spacing="30.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="474.0" styleClass="reset" stylesheets="@../Style/style.css" text="RESET">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.571052610874176" green="0.571052610874176" blue="0.571052610874176" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="464.0" styleClass="continue" stylesheets="@../Style/style.css" text="Continue">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6763157844543457" green="0.6763157844543457" blue="0.6763157844543457" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Line endX="203.60000610351562" endY="-14.0" layoutX="22.0" layoutY="126.0" startX="203.60000610351562" startY="29.199996948242188" stroke="#9c9a9a" strokeWidth="0.5" />
+      <Line endX="338.4000549316406" endY="-24.0" layoutX="32.0" layoutY="136.0" startX="338.4000549316406" startY="19.199996948242188" stroke="#9c9a9a" strokeWidth="0.5" />
+      <Line endX="469.2000427246094" endY="-34.0" layoutX="42.0" layoutY="146.0" startX="469.2000427246094" startY="9.199996948242188" stroke="#9c9a9a" strokeWidth="0.5" />
+      <Line endX="627.2000122070312" endY="-44.0" layoutX="52.0" layoutY="156.0" startX="627.2000122070312" startY="-0.8000030517578125" stroke="#9c9a9a" strokeWidth="0.5" />
+      <Line endX="776.4000244140625" endY="-54.0" layoutX="62.0" layoutY="166.0" startX="776.4000244140625" startY="-10.800003051757812" stroke="#9c9a9a" strokeWidth="0.5" />
+      <Line endX="329.6000671386719" endY="159.20001220703125" layoutX="32.0" layoutY="136.0" startX="329.6000671386719" startY="199.0" stroke="#9c9a9a" strokeWidth="0.5" />
+      <Line endX="666.7999877929688" endY="149.20001220703125" layoutX="42.0" layoutY="146.0" startX="666.7999877929688" startY="188.20001220703125" stroke="#9c9a9a" strokeWidth="0.5" />
+   </children>
+</AnchorPane>
